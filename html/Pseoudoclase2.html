@@ -1,0 +1,257 @@
+Aquí está el código HTML limpio, con una correcta indentación y sin cambios en su estructura:
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>listas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilos.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Indice.html">INICIO</a></li>
+            <li><a href="atajos.html">ATAJOS</a></li>
+            <li><a href="anclas.html">ANCLAS</a></li>
+            <li><a href="imagenes.html">IMAGENES WEB</a></li>
+            <li><a href="tablas.html">TABLAS</a></li>
+            <li><a href="Listas.html">LISTAS</a></li>
+            <li><a href="pseoudo.html">PSEOUDO</a></li>
+            <li><a href="Pseoudoclase2.html">PSEOUDO CLASE 2</a></li>
+            <li><a href="divs.html">DIVS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Div de registro -->
+    <div class="registro">
+        <p style="display: inline-block; margin: 0;">User: username </p>
+        <a href="/indice.html"> LogOut </a>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>PSEOUDO CLASE 2</h1>
+    </header>
+
+    <div class="container">
+        <h1>Tutorial: Pseudo-clases en CSS</h1>
+        <h2>Índice</h2>
+        <a href="#introduccion">Introducción</a>
+        <a href="#first-child">:first-child</a>
+        <a href="#last-child">:last-child</a>
+        <a href="#nth-child">:nth-child(n)</a>
+        <a href="#nth-of-type">:nth-of-type(n)</a>
+        <a href="#not">:not(selector)</a>
+    </div>
+
+    <section id="container">
+        <h2>Introducción</h2>
+        <p>Las pseudo-clases en CSS permiten aplicar estilos a elementos HTML en función de su estado o posición.
+            Este tutorial cubre algunas de las pseudo-clases más comunes.</p>
+    </section>
+
+    <section id="first-child">
+        <h2>:first-child</h2>
+        <p>La pseudo-clase <code>:first-child</code> se aplica al primer elemento hijo de un elemento padre.</p>
+        <div class="ejemplo">
+            <ul class="lista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li class="destacado">Elemento 3 (destacado)</li>
+            </ul>
+            <div class="parrafo">
+                <p>Este es el primer párrafo.</p>
+                <p>Este es el segundo párrafo.</p>
+            </div>
+            <div class="span">
+                <span>Este es el primer span.</span>
+                <span>Este es el segundo span.</span>
+            </div>
+        </div>
+        <div class="codigo">
+            <span>&lt;ul class="lista"&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 1<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 2<span>&lt;/li&gt;</span><br>
+            <span>&lt;li class="destacado"&gt;</span>Elemento 3 (destacado)<span>&lt;/li&gt;</span><br>
+            <span>&lt;/ul&gt;</span>
+        </div>
+        <p>
+            <code>.lista li:first-child { color: blue; }</code><br>
+            <code>.parrafo p:first-child { font-weight: bold; }</code><br>
+            <code>.span span:first-child { font-size: 1.2em; }</code>
+        </p>
+    </section>
+
+    <section id="last-child">
+        <h2>:last-child</h2>
+        <p>La pseudo-clase <code>:last-child</code> se aplica al último elemento hijo de un elemento padre.</p>
+        <div class="ejemplo">
+            <ul class="lista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li class="destacado">Elemento 3 (destacado)</li>
+            </ul>
+            <div class="parrafo">
+                <p>Este es el primer párrafo.</p>
+                <p>Este es el segundo párrafo.</p>
+            </div>
+            <div class="span">
+                <span>Este es el primer span.</span>
+                <span>Este es el segundo span.</span>
+            </div>
+        </div>
+        <div class="codigo">
+            <span>&lt;ul class="lista"&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 1<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 2<span>&lt;/li&gt;</span><br>
+            <span>&lt;li class="destacado"&gt;</span>Elemento 3 (destacado)<span>&lt;/li&gt;</span><br>
+            <span>&lt;/ul&gt;</span>
+        </div>
+        <p>
+            <code>.lista li:last-child { color: green; }</code><br>
+            <code>.parrafo p:last-child { font-style: italic; }</code><br>
+            <code>.span span:last-child { text-decoration: underline; }</code>
+        </p>
+    </section>
+
+    <section id="nth-child">
+        <h2>:nth-child(n)</h2>
+        <p>La pseudo-clase <code>:nth-child(n)</code> se aplica a los elementos hijos que se encuentran en una
+            posición específica dentro de un elemento padre.</p>
+        <div class="ejemplo">
+            <ul class="listanth-child">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li class="destacado">Elemento 3 (destacado)</li>
+            </ul>
+            <div class="parrafonth-child">
+                <p>Este es el primer párrafo.</p>
+                <p>Este es el segundo párrafo.</p>
+            </div>
+            <div class="spannth-child">
+                <span>Este es el primer span.</span>
+                <span>Este es el segundo span.</span>
+            </div>
+        </div>
+        <div class="codigo">
+            <span>&lt;ul class="lista"&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 1<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 2<span>&lt;/li&gt;</span><br>
+            <span>&lt;li class="destacado"&gt;</span>Elemento 3 (destacado)<span>&lt;/li&gt;</span><br>
+            <span>&lt;/ul&gt;</span>
+        </div>
+        <p>
+            <code>.lista li:nth-child(2) { font-weight: bold; }</code><br>
+            <code>.parrafo p:nth-child(2) { color: orange; }</code><br>
+            <code>.span span:nth-child(2) { background-color: lightgray; }</code>
+        </p>
+    </section>
+
+    <section id="nth-of-type">
+        <h2>:nth-of-type(n)</h2>
+        <p>La pseudo-clase <code>:nth-of-type(n)</code> se aplica a los elementos de un tipo específico que se
+            encuentran en una posición específica dentro de un elemento padre.</p>
+        <div class="ejemplo">
+            <ul class="listanth-of-type">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li class="destacado">Elemento 3 (destacado)</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+                <li>Elemento 6</li>
+            </ul>
+            <div class="parrafonth-of-type">
+                <p>Este es el primer párrafo.</p>
+                <p>Este es el segundo párrafo.</p>
+                <p class="destacado">Este es el tercer párrafo (destacado).</p>
+                <p>Este es el cuarto párrafo.</p>
+                <p>Este es el quinto párrafo.</p>
+                <p>Este es el sexto párrafo.</p>
+            </div>
+            <div class="spannth-of-type">
+                <span>Este es el primer span.</span>
+                <span>Este es el segundo span.</span>
+                <span class="destacado">Este es el tercer span (destacado).</span>
+                <span>Este es el cuarto span.</span>
+                <span>Este es el quinto span.</span>
+                <span>Este es el sexto span.</span>
+            </div>
+        </div>
+        <div class="codigo">
+            <span>&lt;ul class="lista"&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 1<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 2<span>&lt;/li&gt;</span><br>
+            <span>&lt;li class="destacado"&gt;</span>Elemento 3 (destacado)<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 4<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 5<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 6<span>&lt;/li&gt;</span><br>
+            <span>&lt;/ul&gt;</span>
+        </div>
+        <p>
+            <code>.lista li:nth-of-type(2n) { color: blue; }</code><br>
+            <code>.parrafo p:nth-of-type(3) { font-weight: bold; }</code><br>
+            <code>.span span:nth-of-type(4n) { font-size: 1.2em; }</code>
+        </p>
+    </section>
+
+    <section id="not">
+        <h2>:not(selector)</h2>
+        <p>La pseudo-clase <code>:not(selector)</code> se aplica a los elementos que no coinciden con el selector
+            especificado.</p>
+        <div class="ejemplo">
+            <ul class="listanot">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li class="destacado">Elemento 3 (destacado)</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+                <li>Elemento 6</li>
+            </ul>
+            <div class="parrafonot">
+                <p>Este es el primer párrafo.</p>
+                <p>Este es el segundo párrafo.</p>
+                <p class="destacado">Este es el tercer párrafo (destacado).</p>
+                <p>Este es el cuarto párrafo.</p>
+                <p>Este es el quinto párrafo.</p>
+                <p>Este es el sexto párrafo.</p>
+            </div>
+            <div class="spannot">
+                <span>Este es el primer span.</span>
+                <span>Este es el segundo span.</span>
+                <span class="destacado">Este es el tercer span (destacado).</span>
+                <span>Este es el cuarto span.</span>
+                <span>Este es el quinto span.</span>
+                <span>Este es el sexto span.</span>
+            </div>
+        </div>
+        <div class="codigo">
+            <span>&lt;ul class="lista"&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 1<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 2<span>&lt;/li&gt;</span><br>
+            <span>&lt;li class="destacado"&gt;</span>Elemento 3 (destacado)<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 4<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 5<span>&lt;/li&gt;</span><br>
+            <span>&lt;li&gt;</span>Elemento 6<span>&lt;/li&gt;</span><br>
+            <span>&lt;/ul&gt;</span>
+        </div>
+        <p>
+            <code>.lista li:not(.destacado) { opacity: 0.5; }</code><br>
+            <code>.parrafo p:not(.destacado) { font-style: italic; }</code><br>
+            <code>.span span:not(.destacado) { text-decoration: underline; }</code>
+        </p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

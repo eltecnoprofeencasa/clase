@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Indice de pagina</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilos.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Indice.html">INICIO</a></li>
+            <li><a href="atajos.html">ATAJOS</a></li>
+            <li><a href="anclas.html">ANCLAS</a></li>
+            <li><a href="imagenes.html">IMAGENES WEB</a></li>
+            <li><a href="tablas.html">TABLAS</a></li>
+            <li><a href="Listas.html">LISTAS</a></li>
+            <li><a href="pseoudo.html">PSEOUDO</a></li>
+            <li><a href="Pseoudoclase2.html">PSEOUDO CLASE 2</a></li>
+            <li><a href="divs.html">DIVS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Div de registro -->
+    <div class="registro">
+        <p style="display: inline-block; margin: 0;">User: username</p>
+        <a href="/indice.html"> LogOut </a>
+    </div>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Encabezado -->
+        <header>
+            <h1>DIVS</h1>
+        </header>
+        <div class="main p">
+            <h1>Tutorial de Divs en HTML</h1>
+
+            <div class="container">
+                <h2>¿Qué es un div?</h2>
+                <p>
+                    Un <code>&lt;div&gt;</code> es un contenedor genérico en HTML que se utiliza para agrupar elementos
+                    y
+                    aplicar estilos o diseños. No tiene un significado semántico específico, por lo que es muy flexible.
+                </p>
+                <div class="div-example">
+                    Este es un ejemplo de un <code>&lt;div&gt;</code>.
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Atributos más usados en divs</h2>
+                <p>
+                    Los <code>&lt;div&gt;</code> pueden tener varios atributos, pero los más comunes son:
+                </p>
+                <ul>
+                    <li><strong>class</strong>: Para asignar una clase y aplicar estilos CSS.</li>
+                    <li><strong>id</strong>: Para identificar un div de manera única.</li>
+                    <li><strong>style</strong>: Para aplicar estilos directamente en el elemento.</li>
+                </ul>
+                <div class="div-example" style="background-color: #e0e0e0;">
+                    Este es un <code>&lt;div&gt;</code> con el atributo <code>style</code> aplicado directamente.
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Colocar divs en horizontal</h2>
+                <p>
+                    Para colocar varios <code>&lt;div&gt;</code> en horizontal, puedes usar propiedades como
+                    <code>float</code>, <code>display: inline-block</code>, o <code>flexbox</code>.
+                </p>
+
+                <h3>1. Usando <code>float</code></h3>
+                <p>
+                    La propiedad <code>float</code> permite que un elemento flote a la izquierda o derecha de su
+                    contenedor.
+                    Es importante usar un <code>clearfix</code> para evitar problemas de diseño.
+                </p>
+                <div class="clearfix">
+                    <div class="float-example">
+                        Div 1 con <code>float: left</code>.
+                    </div>
+                    <div class="float-example">
+                        Div 2 con <code>float: left</code>.
+                    </div>
+                </div>
+
+                <h3>2. Usando <code>display: inline-block</code></h3>
+                <p>
+                    La propiedad <code>display: inline-block</code> permite que los elementos se coloquen en línea pero
+                    manteniendo las propiedades de bloque, como <code>width</code> y <code>height</code>.
+                </p>
+                <div>
+                    <div class="inline-block-example">
+                        Div 1 con <code>display: inline-block</code>.
+                    </div>
+                    <div class="inline-block-example">
+                        Div 2 con <code>display: inline-block</code>.
+                    </div>
+                    <div class="inline-block-example">
+                        Div 3 con <code>display: inline-block</code>.
+                    </div>
+                </div>
+
+                <h3>3. Usando <code>flexbox</code></h3>
+                <p>
+                    Flexbox es una técnica moderna para crear diseños flexibles y responsivos. Con
+                    <code>display: flex</code>, los elementos se colocan automáticamente en horizontal.
+                </p>
+                <div class="horizontal-container">
+                    <div class="div-example">
+                        Div 1 con <code>flexbox</code>.
+                    </div>
+                    <div class="div-example">
+                        Div 2 con <code>flexbox</code>.
+                    </div>
+                    <div class="div-example">
+                        Div 3 con <code>flexbox</code>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Propiedades CSS importantes para divs</h2>
+                <p>
+                    Algunas de las propiedades CSS más usadas con <code>&lt;div&gt;</code> son:
+                </p>
+                <ul>
+                    <li><strong>width</strong>: Define el ancho del div. Puede ser en píxeles (px) o porcentaje (%).
+                    </li>
+                    <li><strong>height</strong>: Define la altura del div.</li>
+                    <li><strong>margin</strong>: Controla el espacio exterior alrededor del div.</li>
+                    <li><strong>padding</strong>: Controla el espacio interior dentro del div.</li>
+                    <li><strong>background-color</strong>: Define el color de fondo del div.</li>
+                    <li><strong>border</strong>: Añade un borde alrededor del div.</li>
+                </ul>
+                <div class="div-example" style="width: 300px; margin: auto; background-color: #d0e0f0;">
+                    Este es un div con <code>width: 300px</code> y <code>margin: auto</code> para centrarlo.
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Ejemplo de width en porcentajes</h2>
+                <p>
+                    Usar porcentajes en <code>width</code> permite que el ancho del div sea relativo al tamaño de su
+                    contenedor.
+                </p>
+                <div style="width: 80%; margin: auto; background-color: #f0d0d0; padding: 10px;">
+                    Este div tiene <code>width: 80%</code>.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Anlcas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilos.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Indice.html">INICIO</a></li>
+            <li><a href="atajos.html">ATAJOS</a></li>
+            <li><a href="anclas.html">ANCLAS</a></li>
+            <li><a href="imagenes.html">IMAGENES WEB</a></li>
+            <li><a href="tablas.html">TABLAS</a></li>
+            <li><a href="Listas.html">LISTAS</a></li>
+            <li><a href="pseoudo.html">PSEOUDO</a></li>
+            <li><a href="Pseoudoclase2.html">PSEOUDO CLASE 2</a></li>
+            <li><a href="divs.html">DIVS</a></li>
+        </ul>
+    </nav>
+    <!-- Div de registro -->
+    <div class="registro">
+        <p style="display: inline-block; margin: 0;">User: username</p>
+        <a href="/indice.html"> LogOut </a>
+    </div>
+    <!-- Encabezado -->
+    <header>
+        <h1>ANCLAS</h1>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section id="seccion2">
+            <div class="container">
+                <h3> Anclas:</h3>
+                <ol>
+                    <li> Este vinculo se abre en la misma pagina: <a
+                            href="https://www.w3schools.com/html/html_links.asp" target="_self">w3cschool self</a>
+                        <pre> &lt;a href="https://www.w3schools.com/html/html_links.asp" target="_self"&gt;w3cschool self&lt;/a&gt; </pre>
+                    </li>
+                    <li> Este vinculo se abre en una pagina nueva: <a
+                            href="https://www.w3schools.com/html/html_links.asp" target="_blank">w3cschool blank</a>
+                        <pre> &lt;a href="https://www.w3schools.com/html/html_links.asp" target="_blank"&gt;w3cschool blank&lt;/a&gt; </pre>
+                    </li>
+                    <li> Este vinculo abre una imagen en el mismo nivel: <a href="../img/imagen-ia.png"
+                            target="_self">ABRIR</a>
+                        <pre> &lt;a href="/img/imagen-ia.png" target="_self"&gt;ABRIR&lt;/a&gt; </pre>
+                    </li>
+                    <li> Este vinculo es una imagen que abre un link:
+                        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+                            <img src="../img/7b0305b518177de445ce042c786a9060.jpg" alt="imagen de girasol"
+                                title="fondo ia" class="imagenconlink">
+                        </a>
+                    </li>
+                    <li> Este vinculo que abre un correo: <a href="mailto:correo@electronico.com" target="_blank">
+                            Enviar Correo </a> </li>
+                    <li> Este vinculo abre una carpeta: <a href="../zip/carpeta.zip" target="_blank"> Descargar Zip </a>
+                    </li>
+                    <li> Este vinculo se abre un documento pdf: <a
+                            href="../pdf/23-brasil-informe-tendencias-invierno-2024.pdf" target="_blank">
+                            Abrir PDF
+                        </a> </li>
+                    <li> Este vinculo abre un pdf de una sub carpeta:
+                        <a href="../pdf/PDF SUB/23-brasil-informe-tendencias-invierno-2024 - copia.pdf" target="_blank">
+                            Abrir PDF en sub carpeta
+                        </a>
+                    </li>
+                    <li> Este vinculo abre un pdf de una sub carpeta de una sub carpeta:
+                        <a href="../pdf/PDF SUB/pdf sub de sub/" target="_blank">
+                            Abrir PDF en una sub carpeta de una sub carpeta
+                        </a>
+                    </li>
+                    <li> Este es un boton de un vinculo a una sub carpeta de una sub carpeta de una sub carpeta:
+                        <button
+                            onclick="document.location='../pdf/PDF SUB/pdf sub de sub/23-brasil-informe-tendencias-invierno-2024 - copia.pdf'"
+                            target="_blank"> ABRIR </button>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

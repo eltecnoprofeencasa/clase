@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pseudo-clases CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilos.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Indice.html">INICIO</a></li>
+            <li><a href="atajos.html">ATAJOS</a></li>
+            <li><a href="anclas.html">ANCLAS</a></li>
+            <li><a href="imagenes.html">IMAGENES WEB</a></li>
+            <li><a href="tablas.html">TABLAS</a></li>
+            <li><a href="Listas.html">LISTAS</a></li>
+            <li><a href="pseoudo.html">PSEOUDO</a></li>
+            <li><a href="Pseoudoclase2.html">PSEOUDO CLASE 2</a></li>
+            <li><a href="divs.html">DIVS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Div de registro -->
+    <div class="registro">
+        <p style="display: inline-block; margin: 0;">User: username</p>
+        <a href="/indice.html"> LogOut </a>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>PSEOUDO</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h1>Tutorial: Pseudo-clases CSS</h1>
+        <h2>Índice</h2>
+        <a href="#introduccion">Introducción</a>
+        <a href="#enlaces">Enlaces (:link, :visited, :hover, :active)</a>
+        <a href="#citas">Citas (:lang)</a>
+        <a href="#primera-letra">Primera letra (::first-letter)</a>
+        <a href="#primera-linea">Primera línea (::first-line)</a>
+
+        <!-- Sección: Introducción -->
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>Las pseudo-clases en CSS permiten aplicar estilos a elementos HTML en función de su estado o posición.
+                Este tutorial cubre algunas de las pseudo-clases más comunes.</p>
+        </section>
+
+        <!-- Sección: Enlaces -->
+        <section id="enlaces">
+            <h2>Enlaces (:link, :visited, :hover, :active)</h2>
+            <p>Estas pseudo-clases se utilizan para estilizar enlaces en diferentes estados:</p>
+            <ul>
+                <li><code>:link</code>: Enlaces no visitados.</li>
+                <li><code>:visited</code>: Enlaces visitados.</li>
+                <li><code>:hover</code>: El cursor está sobre el enlace.</li>
+                <li><code>:active</code>: El enlace está siendo clickeado.</li>
+            </ul>
+            <div class="ejemplo">
+                <a href="#">Enlace no visitado</a><br>
+                <a href="https://www.ejemplo.com" target="_blank">Enlace visitado (ejemplo.com)</a>
+            </div>
+            <div class="codigo">
+                <span>&lt;a href="#"&gt;</span>Enlace no visitado<span>&lt;/a&gt;</span><br>
+                <span>&lt;a href="https://www.ejemplo.com" target="_blank"&gt;</span>Enlace visitado<span>&lt;/a&gt;</span>
+            </div>
+            <p>
+                <code>a:link { color: green; }</code><br>
+                <code>a:visited { color: red; }</code><br>
+                <code>a:hover { color: orange; }</code><br>
+                <code>a:active { color: blue; }</code>
+            </p>
+        </section>
+
+        <!-- Sección: Citas -->
+        <section id="citas">
+            <h2>Citas (:lang)</h2>
+            <p>La pseudo-clase <code>:lang</code> se utiliza para aplicar estilos a elementos en función del idioma del contenido.</p>
+            <div class="ejemplo">
+                <p>Aquí empieza un texto y lo siguiente es en español: <q lang="es">Esto es una cita en español.</q></p>
+                <p>Aquí empieza un texto y lo siguiente es en inglés: <q lang="en">This is a quote in English.</q></p>
+            </div>
+            <div class="codigo">
+                <span>&lt;q lang="es"&gt;</span>Esto es una cita en español.<span>&lt;/q&gt;</span><br>
+                <span>&lt;q lang="en"&gt;</span>This is a quote in English.<span>&lt;/q&gt;</span>
+            </div>
+            <p>
+                <code>q:lang(es) { quotes: "«" "»"; }</code><br>
+                <code>q:lang(en) { quotes: '"' '"'; }</code>
+            </p>
+        </section>
+
+        <!-- Sección: Primera letra -->
+        <section id="primera-letra">
+            <h2>Primera letra (::first-letter)</h2>
+            <p>La pseudo-clase <code>::first-letter</code> se utiliza para estilizar la primera letra de un texto.</p>
+            <div class="ejemplo">
+                <p>Este párrafo tiene la primera letra en rojo.</p>
+            </div>
+            <div class="codigo">
+                <span>&lt;p&gt;</span>Este párrafo tiene la primera letra en rojo.<span>&lt;/p&gt;</span>
+            </div>
+            <p>
+                <code>p::first-letter { color: red; }</code>
+            </p>
+        </section>
+
+        <!-- Sección: Primera línea -->
+        <section id="primera-linea">
+            <h2>Primera línea (::first-line)</h2>
+            <p>La pseudo-clase <code>::first-line</code> se utiliza para estilizar la primera línea de un texto.</p>
+            <div class="ejemplo">
+                <p>Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                    Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                    Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                    Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                    Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                    Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.
+                </p>
+            </div>
+            <div class="codigo">
+                <span>&lt;p&gt;</span>Esta es la primera línea de este párrafo. El resto del párrafo no está en itálica.<span>&lt;/p&gt;</span>
+            </div>
+            <p>
+                <code>p::first-line { font-style: italic; }</code>
+            </p>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
